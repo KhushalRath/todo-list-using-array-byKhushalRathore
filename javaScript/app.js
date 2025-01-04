@@ -33,7 +33,7 @@ function addHandler(){
       editButton.appendChild(editIcon);
       editIcon.setAttribute("src", "./icons/editBtn.png");
       editIcon.setAttribute("class", "edit-icon");
-      
+
       var deleteButton = document.createElement("button");
       buttonContainer.appendChild(deleteButton);
       deleteButton.setAttribute("class", "dlt-btn");
@@ -97,5 +97,7 @@ function addHandler(){
   }
 
   function deleteAllhandler(){
-    listContainer.innerHTML = ""
+    //  todos.splice(index, todos.length);
+    todos = [];
+     showListHandler();
   }
